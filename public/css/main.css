@@ -256,6 +256,11 @@ body {
 	z-index: 1;
 }
 
+.catalogs-movies-list-item:hover .movie-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
 .movie-poster-info h3 {
 	color: #e4bb23;
 	font-size: 2em;
@@ -269,14 +274,7 @@ body {
 	transition: all 0.2s ease-in-out;
 }
 
-.fa {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+
 
 .filme-sinopse {
 	padding: 10px;
@@ -301,6 +299,10 @@ body {
 	color: #e4bb23;
 }
 
+.sinopse-genero-item:hover {
+	text-decoration: underline;
+}
+
 .movie-nota {
 	margin: 0;
 	align-items: center;
@@ -310,7 +312,17 @@ body {
 	justify-content: space-between;
 }
 
-.rodape {
+.movie-nota i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+.movie-nota i:hover {
+	color: #e74c3c;
+}
+
+
+.footer {
 	background-color: #fff;
 	color: #bababa;
 	padding: 20px 0;
@@ -318,7 +330,7 @@ body {
 	width: 100%;
 }
 
-.rodape .container {
+.footer .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -328,19 +340,31 @@ img {
 	border: 0;
 }
 
-.rodape-list {
+.footer-list {
 	padding: 0;
 	list-style: none;
 	display: flex;
 }
 
-.rodape-list-item {
+.footer-list-item {
 	margin: 0 20px;
 }
 
-.rodape-list-item a {
+.footer-list-item a {
 	font-size: 2.5em;
 	color: #bababa;
 	text-decoration: none;
 	transition: all 0.2s ease-in-out;
+}
+
+.icon-twitter a:hover {
+	color: #55acee;
+}
+
+.icon-facebook a:hover {
+	color: #3b5998;
+}
+
+.icon-instagram a:hover {
+	color: #e95950;
 }
